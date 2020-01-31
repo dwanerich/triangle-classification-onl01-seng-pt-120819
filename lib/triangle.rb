@@ -15,8 +15,6 @@ class Triangle
           raise TriangleError
           # rescue TriangleError => error
           # return error.message
-          end
-
       elsif s1 == s2 && s1 == s3
         kind = :equilateral
 
@@ -28,6 +26,7 @@ class Triangle
       end
     end
   end
+end
 
 
     class TriangleError < StandardError
